@@ -36,9 +36,9 @@ target_include_directories(sleepy-discord
 #These issues are fixed by using preprocessor defines to replace code that
 #cause issues with c++14 code
 if (CXX_STANDARD LESS 14 OR NOT CXX_STANDARD)
-	set_target_properties(sleepy-discord PROPERTIES CXX_STANDARD 14)
+	set_target_properties(sleepy-discord PROPERTIES CXX_STANDARD 17)
 	set_target_properties(sleepy-discord PROPERTIES CXX_STANDARD_REQUIRED ON)
-	target_compile_features(sleepy-discord PUBLIC cxx_std_14)
+	target_compile_features(sleepy-discord PUBLIC cxx_std_17)
 endif()
 target_compile_definitions(sleepy-discord PUBLIC SLEEPY_DISCORD_CMAKE)
 

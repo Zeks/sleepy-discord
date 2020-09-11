@@ -9,7 +9,7 @@ namespace SleepyDiscord {
 		Channel(json::fromJSON<Channel>(json)) {
 	}
 
-	Channel::Channel(const nonstd::string_view& json) :
+	Channel::Channel(const std::string_view& json) :
 		Channel(json::fromJSON<Channel>(json)) {
 	}
 

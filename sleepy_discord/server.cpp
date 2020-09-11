@@ -19,7 +19,7 @@ namespace SleepyDiscord {
 		ServerMember(json::fromJSON<ServerMember>(json)) {
 		ID = user.ID;
 	}
-	ServerMember::ServerMember(const nonstd::string_view & json) :
+	ServerMember::ServerMember(const std::string_view & json) :
 		ServerMember(json::fromJSON<ServerMember>(json)) {
 	}
 

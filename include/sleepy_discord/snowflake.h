@@ -20,7 +20,7 @@ namespace SleepyDiscord {
 		Snowflake(const std::string         & snow  ) : raw( snow                         ) {}
 		Snowflake(const std::string         * snow  ) : raw(*snow                         ) {}
 		Snowflake(const char                * snow  ) : raw( snow                         ) {}
-		Snowflake(const nonstd::string_view & snow  ) : raw(snow.data(), snow.length()    ) {}
+		Snowflake(const std::string_view & snow  ) : raw(snow.data(), snow.length()    ) {}
 		Snowflake(const Snowflake           & flake ) : Snowflake(flake.string(          )) {}
 		Snowflake(const DiscordObject       & object) : Snowflake(object. ID              ) {}
 		Snowflake(const DiscordObject       * object) : Snowflake(object->ID              ) {}
