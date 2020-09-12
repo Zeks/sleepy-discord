@@ -22,7 +22,7 @@ namespace SleepyDiscord {
 	struct ServerMember : public IdentifiableDiscordObject<User> {
 		ServerMember() = default;
 		//ServerMember(const std::string * rawJson);
-		ServerMember(const nonstd::string_view & rawJSON);
+		ServerMember(const std::string_view & rawJSON);
 		ServerMember(const json::Value& json);
 		//ServerMember(const json::Values values);
 		User user;
@@ -53,7 +53,7 @@ namespace SleepyDiscord {
 		//~Server();
 		Server() = default;
 		//Server(const std::string * rawJson);
-		Server(const nonstd::string_view & rawJSON);
+		Server(const std::string_view & rawJSON);
 		Server(const json::Value& json);
 		//Server(const json::Values values);
 		std::string name;
@@ -118,7 +118,7 @@ namespace SleepyDiscord {
 	struct UnavailableServer : public IdentifiableDiscordObject<Server> {
 		UnavailableServer() = default;
 		//UnavailableServer(const std::string * rawJson);
-		UnavailableServer(const nonstd::string_view & rawJSON);
+		UnavailableServer(const std::string_view & rawJSON);
 		UnavailableServer(const json::Value& json);
 		//UnavailableServer(const json::Values values);
 
@@ -186,7 +186,7 @@ namespace SleepyDiscord {
 	struct ServerEmbed : public DiscordObject {
 		ServerEmbed() = default;
 		//ServerEmbed(const std::string * rawJson);
-		ServerEmbed(const nonstd::string_view & rawJSON);
+		ServerEmbed(const std::string_view & rawJSON);
 		ServerEmbed(const json::Value& json);
 		//ServerEmbed(const json::Values values);
 		bool enabled;

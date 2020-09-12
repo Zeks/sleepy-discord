@@ -9,7 +9,7 @@ namespace SleepyDiscord {
 		Channel(json::fromJSON<Channel>(json)) {
 	}
 
-	Channel::Channel(const nonstd::string_view& json) :
+	Channel::Channel(const std::string_view& json) :
 		Channel(json::fromJSON<Channel>(json)) {
 	}
 
@@ -17,7 +17,7 @@ namespace SleepyDiscord {
 		Overwrite(json::fromJSON<Overwrite>(json)) {
 	}
 
-	Overwrite::Overwrite(const nonstd::string_view& json) :
+	Overwrite::Overwrite(const std::string_view& json) :
 		Overwrite(json::fromJSON<Overwrite>(json)) {
 	}
 }

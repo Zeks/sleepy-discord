@@ -9,7 +9,7 @@ namespace SleepyDiscord {
 		Overwrite() = default;
 		//Overwrite(const std::string * rawJson);
 		Overwrite(const json::Value & rawJSON);
-		Overwrite(const nonstd::string_view & rawJSON);
+		Overwrite(const std::string_view & rawJSON);
 		//Overwrite(const json::Values values);
 		~Overwrite() {}
 		std::string type;
@@ -36,7 +36,7 @@ namespace SleepyDiscord {
 		Channel() = default;
 		//Channel(const std::string * rawJson);
 		Channel(const json::Value & rawJSON);
-		Channel(const nonstd::string_view & rawJSON);
+		Channel(const std::string_view & rawJSON);
 		//Channel(const json::Values values);
 		~Channel();
 		
