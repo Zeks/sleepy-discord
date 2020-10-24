@@ -21,7 +21,7 @@ namespace SleepyDiscord {
 		Emoji(const nonstd::string_view& json);
 		//Emoji(const json::Values values);
 		std::string name;
-		std::vector<Role> roles;
+        std::vector<Snowflake<Role>> roles;
 		User user;	//optional
 		bool requireColons = false;
 		bool managed = false;
